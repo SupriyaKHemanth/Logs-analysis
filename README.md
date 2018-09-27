@@ -20,13 +20,13 @@ This project will answer questions about the site's user activity.
 
 ### To Run
 
-Launch Vagrant VM by running `vagrant up`, you can the log in with `vagrant ssh`
+`vagrant up` - To launch Vagrant 
+`vagrant ssh` - To login 
+`psql -d news -f newsdata.sql` - To load the data & run command to connect to DB and run sql queries.
 
-To load the data, use the command `psql -d news -f newsdata.sql` to connect a database and run the necessary SQL statements.
-
-The database includes three tables:
+The tables:
 - Authors table
 - Articles table
 - Log table
 
-To execute the program, run `python3 newsdata.py` from the command line.
+`python3 newsdata.py` - To execute the program. (from command line)
